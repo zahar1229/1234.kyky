@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head> 
+<title>ебаать орать нахуй в кабыло</title>
+    
+    <script type="text/javascript">
+	function clickHandle() {
+		var element = document.getElementById("counter");
+		element.innerHTML = parseInt(element.innerHTML) + 1;
+	} </script>
+    <style type="text/css">
+	div#counter {
+    	background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    	animation: rainbow 10s ease-in-out infinite;
+    	-webkit-background-clip: text;
+    	background-size: 400% 100%;
+    	font-family: monospace;
+    	background-clip: text;
+    	text-align: center;
+    	color: transparent;
+    	font-size: 32px;
+	}
+
+	div#wrapper {
+		text-align: center;
+		padding: 50px;
+	}
+
+	a#clicker {
+  		box-shadow: 0 -3px rgb(180,180,180) inset;
+  		padding: .8em 1em calc(.8em + 3px);
+  		background: rgb(120,120,120);
+  		font-family: monospace;
+  		text-decoration: none;
+  		border-radius: 5px;
+  		color: white;
+	}
+
+	a#clicker:hover {
+		background: rgb(140, 140, 140);
+	}
+
+	a#clicker:active {
+  		background: rgb(180,180,180);
+	}
+
+	@keyframes rainbow {
+    	0%,100% {
+        	background-position: 0 0;
+    	}
+
+    	50% {
+        	background-position: 100% 0;
+    	}
+	}
+</style>
+</head>
+     
+    <body>
+<div id="counter">0</div>
+<div id="wrapper">
+		<a href="#" id="clicker" onclick="clickHandle()">CLICK</a>
+	</div>
+    </body>
+
+
+</html>
